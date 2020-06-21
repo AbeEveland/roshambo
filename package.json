@@ -3,7 +3,7 @@
   "name": "roshambo",
   "scripts": {
     "start": "browser-sync start --server public --files public",
-    "deploy": "echo 'To setup deployment run: yarn setup-deploy'",
+    "deploy": "netlify deploy --prod --dir=public",
     "setup-deploy": "app-app --deploy && yarn deploy"
   },
   "prettier": {
@@ -25,5 +25,6 @@
     "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
-  }
+  },
+  "homepage": ""
 }

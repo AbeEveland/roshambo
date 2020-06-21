@@ -6,9 +6,114 @@
     <title>Roshambo</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
+    <script src="/main.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1 class="hello-world"></h1>
-    <script src="/main.js" charset="utf-8"></script>
+    <header>
+      <h1>R-o-s-h-a-m-b-o</h1>
+    </header>
+    <article>
+      <div>
+        <p>Result</p>
+      </div>
+    </article>
+
+    <table width="90%" align="center">
+      <tr>
+        <td width="33%" align="center">
+          <span class="selections">Player 1</span>
+          <br />
+          <img id="pic1" src="rock_paper_scissors.jpg" /><br />
+          <br />
+          <input
+            type="button"
+            id="rockButtonPlayer1"
+            class="selections"
+            onclick="selected('pic1',1,'rock')"
+            value="Rock"
+          />
+          <input
+            type="button"
+            id="paperButtonPlayer1"
+            class="selections"
+            onclick="selected('pic1',1,'paper')"
+            value="Paper"
+          />
+          <input
+            type="button"
+            id="scissorButtonPlayer1"
+            class="selections"
+            onclick="selected('pic1',1,'scissors')"
+            value="Scissors"
+          />
+          <input
+            type="button"
+            id="lizardButtonPlayer1"
+            class="selections"
+            onclick="selected('pic1',1,'lizard')"
+            value="Lizard"
+          />
+          <input
+            type="button"
+            id="spockButtonPlayer1"
+            class="selections"
+            onclick="selected('pic1',1,'Spock')"
+            value="Spock"
+          />
+        </td>
+
+        <td width="33%">
+          <input
+            type="button"
+            id="newGameButton"
+            class="selections"
+            onclick="selected('newGame','pic1','pic2')"
+            value="New Game"
+          />
+        </td>
+
+        <td width="34%" align="center">
+          <span class="selections">Player 2</span>
+          <br />
+          <img id="pic2" src="rock_paper_scissors.jpg" /><br />
+          <br />
+          <input
+            type="button"
+            id="rockButtonPlayer2"
+            class="selections"
+            onclick="selected('pic2',2,'rock')"
+            value="Rock"
+          />
+          <input
+            type="button"
+            id="paperButtonPlayer2"
+            class="selections"
+            onclick="selected('pic2',2,'paper')"
+            value="Paper"
+          />
+          <input
+            type="button"
+            id="scissorButtonPlayer2"
+            class="selections"
+            onclick="selected('pic2',2,'scissors')"
+            value="Scissors"
+          />
+          <input
+            type="button"
+            id="lizardButtonPlayer2"
+            class="selections"
+            onclick="selected('pic2',2,'lizard')"
+            value="Lizard"
+          />
+          <input
+            type="button"
+            id="spockButtonPlayer2"
+            class="selections"
+            onclick="selected('pic2',2,'Spock')"
+            value="Spock"
+          />
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

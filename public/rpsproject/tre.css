@@ -1,3 +1,21 @@
+.selections  {
+              align-items       : center;
+              background        : rgb(9, 11, 102);
+              border-radius     : 25px;
+              color             : whitesmoke;
+              display           : flex;
+              flex-direction    : row;
+              justify-content   : center;
+              line-height       : 32px;
+              margin            : auto;
+              margin-top        : 20px;
+              width             : 100px;
+              }
+
+
+
+
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -6,6 +24,7 @@ html {
   height: 100%;
   background: rgb(60, 60, 61);
   padding: 50px;
+  padding: 5px;
 }
 
 body {
@@ -35,12 +54,14 @@ article {
   background: rgb(9, 11, 102);
   width: 500px;
   margin-top: 200px;
+  margin-top: 20px;
 }
 
 section {
   display: flex;
   flex-direction: row;
   margin-top: 300px;
+  margin-top: 30px;
   padding: 10px;
   justify-items: right;
 }
@@ -76,18 +97,4 @@ li {
 p {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 22px;
-}
-
-.selections {
-  align-items: center;
-  background: rgb(9, 11, 102);
-  border-radius: 25px;
-  color: whitesmoke;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  line-height: 32px;
-  margin: auto;
-  margin-top: 20px;
-  width: 100px;
 }

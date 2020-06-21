@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roshambo</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="tre.css" />
+    <script src="tre.js" charset="utf-8"></script>
+    </head>
+
+  <body>
+    <header>
+      <h1>R-o-s-h-a-m-b-o</h1>
+      </header>
+    <article>
+      <div>
+        <p>Result</p>
+        </div>
+      </article>
+
+    <table width = 90% align=center>
+      <tr>
+        <td width=33% align=center>
+          <span class = 'selections'>Player 1</span>
+          <br>
+          <img id='pic1' src='rock_paper_scissors.jpg'><br>
+          <br>
+          <input type="button" id='but1' class='selections' onclick="selected('pic1',1,'rock')"     value="Rock" />
+          <input type="button" id='but2' class='selections' onclick="selected('pic1',1,'paper')"    value="Paper" />
+          <input type="button" id='but3' class='selections' onclick="selected('pic1',1,'scissors')" value="Scissors" />
+          </td>
+
+        <td width=33%>
+          <input type="button" id='butng' class='selections' onclick="selected('newgame','pic1','pic2')"     value="New Game" />
+          </td>
+
+        <td width=34% align=center>
+          <span class = 'selections'>Player 2</span>
+          <br>
+          <img id='pic2' src='rock_paper_scissors.jpg'><br>
+          <br>
+          <input type="button" id='but4' class='selections' onclick="selected('pic2',2,'rock')"     value="Rock" />
+          <input type="button" id='but5' class='selections' onclick="selected('pic2',2,'paper')"    value="Paper" />
+          <input type="button" id='but6' class='selections' onclick="selected('pic2',2,'scissors')" value="Scissors" />
+          </td>
+        </tr>
+      </table>
+
+    <script> var but = document.getElementById('butng'); but.style.visibility = "hidden"; </script>
+
+    </body>
+  </html>
